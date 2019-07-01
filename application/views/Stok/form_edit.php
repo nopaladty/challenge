@@ -1,7 +1,7 @@
 <h3> Edit Data Stok</h3>
-	<?php
-		echo form_open ('stok/edit');
-	?>
+<?php
+echo form_open ('stok/edit');
+?>
 
 <input type="hidden" name="id" value="<?php echo $record['id_stok']?>">
 <table border="3">

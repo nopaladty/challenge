@@ -7,9 +7,12 @@ class Model_stok extends CI_Model{
 		return 
 		$this->db->join('barang','barang.id_barang = stok.id_barang','left')
 		->join('kategori','kategori.id_kategori = barang.id_kategori','left')
-		->distinct()
 		->get('stok')->result();
 
+	}
+
+	function tampil_data2(){
+		return $this->db->get('stok')->result();
 	}
 
 	function post($data)
@@ -30,9 +33,9 @@ class Model_stok extends CI_Model{
 	}
 
 	function hapus($id)
-		{
-			$this->db->where('id_barang', $id);
-			$this->db->delete('barang');
-		}
+	{
+		$this->db->where('id_barang', $id);
+		$this->db->delete('barang');
+	}
 }
 ?>

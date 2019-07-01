@@ -11,24 +11,24 @@ $this->load->model('Model_stok');
 }
 function index()
 {
-		$data['stok'] = $this->Model_stok->tampil_data();
+		$data['stok'] = $this->Model_stok->tampil_data();        
 		$this->template->load('template/template','stok/lihat_data',$data);
+      
 }
 	function post()
 	{
 			if(isset($_POST["submit"])){
 				// proses barang
-				$id = $this->input->post('id');
-				$nama = $this->input->post('nama_barang');
-				$kategori = $this->input->post('kategori');
-				$harga = $this->input->post('harga');
-				$data = array('nama_barang'=>$nama,'
-								id_kategori'=>$kategori, 'harga'=>$harga);
+				$barang = $this->input->post('barang');
+                $stok = $this->input->post('stok');
+				$data = array(
+                            'id_barang'=>$barang, 
+                            'stok_barang'=>$stok,
+                            'tanggal_stok' => date('Y-m-d')
+                             );
 
-				   // var_dump($data);
-       //    die;
-				$this->Model_barang->post($data, $id);
-				redirect('barang');
+				$this->Model_stok->post($data);
+				redirect('stok');
 			}
 			 else {
 			 	$id = $this->uri->segment(3);

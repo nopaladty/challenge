@@ -9,7 +9,7 @@
 <div class="box-header">
   <h3 class="box-title"> Operator</h3>
  
-<div class="pull-center">
+<div class="pull-right">
 
 <?php
 echo anchor('operator/post','Tambah Data',array('class' => 'btn btn-success'));
