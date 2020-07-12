@@ -1,0 +1,22 @@
+SOAL !
+
+1.	Apa yang Anda ketahui tentang Git?
+2.	Apa yang Anda ketahui tentang Relasi Table dalam database?
+3.	Apa yang Anda ketahui tentang OOP?
+4.	Apa yang Anda ketahui tentang REST API?
+5.	Security apa saja yang bisa digunakan dalam REST API?
+
+1. Git adalah salah satu sistem pengontrol versi (Version Control System) pada proyek perangkat lunak yang diciptakan oleh Linus Torvalds.
+
+Pengontrol versi bertugas mencatat setiap perubahan pada file proyek yang dikerjakan oleh banyak orang maupun sendiri.
+
+2. Relasi sendiri adalah hubungan antara tabel yang mempresentasikan hubungan antar objek di dunia nyata. Relasi merupakan hubungan yang terjadi pada suatu tabel dengan lainnya yang mempresentasikan hubungan antar objek di dunia nyata dan berfungsi untuk mengatur mengatur operasi suatu database. Hubungan yang dapat dibentuk dapat mencakup 3 macam hubungan, yaitu :
+One-To-One (1-1) One-To-Many (1-N) Many-To-Many (N-M)
+
+3. Object Oriented Programming (OOP) adalah sebuah paradigma dalam pemograman yang menyelesaikan masalah program dengan menyediakan objek-objek(terdiri dari beberapa attribute dan method) yang saling berkaitan dan disusun kedalam satu kelompok atau yang disebut dengan class. Nantinya objek-objek tersebut akan saling berinteraksi untuk menyelasaikan masalah program yang rumit.
+
+4. REST itu kependakan dari REpresentational State Transfer yang merupakan standar arsitektur berbasis web yang menggunakan protokol HTTP untuk berkomunikasi data.
+Nah REST ini diperkenalkan oleh Roy Fielding pada tahun 2000. Lalu API itu artinya Application Protocol Interface dimana adalah kumpulan dari subroutine definitions, protocol dan juga tools untuk berkomunikasi data antar aplikasi software.
+Jadi bisa dibilang, REST itu adalah salah satu dari desain arsitektur di dalam API. 
+
+5.  Token dengan HTTPS, Token JWT, OAuth 2
